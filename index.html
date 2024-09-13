@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project_Mcd</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="body.css">
+  <link rel="stylesheet" href="general.css">
+
+</head>
+<body>
+  <script src="open_aloo.js"></script>
+  <div class="container">
+    <div class="header">
+      <div class="left-section">
+       <img class="hamburger-menu-icon" src="icons/hamburger-menu.svg" alt="">
+       <img class="McD-logo-icon" src="icons/McDonald's_logo.svg.png" alt="">
+      </div>
+      <div class="middle-section">
+        <input  class="search-bar" type="text" placeholder="Search for burger">
+        
+        
+          <button class="search-button">
+          <img class="search-icon" src="icons/search (1).svg" alt="">
+          <div class="tool-tip">Search</div>
+        </button>
+       
+      
+        <button class="voice-search">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+          <div class="tool-tip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section"> 
+        <div class="upload-container">
+        <img class="upload-right-icons"  src="cicons/upload.svg" alt="">
+        <div class="tool-tip">create</div>
+      </div>
+      <div class="youtube-apps-container">
+        <img class="apps-right-icons" src="icons/take away.png" alt="">
+        <div class="tool-tip">take out</div>
+      </div>
+  
+        <div class="notifications-div">
+          <img class="notifications-right-icons" src="icons/food cart.png" alt="">
+        <div class="notifications-no">3</div>
+        <div class="tool-tip">add to cart</div>
+        </div>
+     </div>
+    
+    </div>
+    <div class="top_button_div" >
+      <button class="show" onclick="filterFood('veg')">Vegetarian</button>
+  <button class="show" onclick="filterFood('non-veg')">Non-Vegetarian</button>
+  <button class="show" onclick="filterFood('all')">Show All</button>
+    </div>
+    <div id="food-items">
+       
+    <div class="layout">
+      <div class="grid_menu">
+        <div class="burger" data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/mc_aloo tikki.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Mc Aloo</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button  onclick="goToAlooPage()" >open</button>
+            
+          </div>
+        </div>
+        <div class="burger" data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Mexican_Aloo.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Mexcian Aloo</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button  onclick="goToMex_alooPage()" >open</button>
+          </div>
+        </div>
+        <div class="burger" data-type="veg" >
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/McVeggie.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Mc Veggie</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToVeggiePage()">open</button>
+          </div>
+        </div>
+        <div class="burger" data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/paneer_burger.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Mc Spicy Paneer</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToPannerPage ()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger" data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/corn&cheese.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Corn & Cheese</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToCornPage ()" >open</button>
+          </div>
+          
+        </div>
+        <div class="burger" data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/paneer deluxe.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Mc Spicy Paneer deluxe </p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToDeluxePanner ()" >open</button>
+          </div>
+          
+        </div>
+        <div class="burger" data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/paneer premium.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Spicy Panner Premium</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToPrem_vegPage ()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger" data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/McCheese_veg.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Mc Chesse Veg</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToMcCheese_Veg()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Veg_mac.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Mc Veg Maharaja</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToMac_Veg ()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/veg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Paneer_wrap.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Mc Spicy Paneer Wrap</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToPanner_wrap()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Surprise_chicken.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">Surprise Chicken</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToSuprise_chicken()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/MC_Egg.png" alt="Mc Egg"> </div>
+          <div class="BName">
+           <p class="p1">Mc Egg</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToMcEgg()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/McChicken.png" alt="aloo_tikki"> </div>
+          <div class="BName">
+           <p class="p1">MC Chicken</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToMcChicken()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Grill&Cheese.png" alt="Grill and cheese burger"> </div>
+          <div class="BName">
+           <p class="p1">Grill&Cheese Chicken</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToGrill()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Spicy_chicken.png" alt="Spicy_chicken"> </div>
+          <div class="BName">
+           <p class="p1">Spicy Chicken</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToSpicy_Chicken()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Chicken_deluxe.png" alt="Chicken_deluxe"> </div>
+          <div class="BName">
+           <p class="p1">Spicy Chicken deluxe</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToDeluxe_Chicken()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Prem_Chicken.png" alt="Spicy premium Chicken"> </div>
+          <div class="BName">
+           <p class="p1">Spicy Premium Chicken</p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToPrem_Chicken()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/McCheese_chicken.png" alt="Mc Cheese Chicken "> </div>
+          <div class="BName">
+           <p class="p1">Mc Cheese Chicken </p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToMcCheese_Chicken()">open</button>
+          </div>
+          
+        </div>
+       
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Mac_chicken.png" alt="Chicken Maharaja"> </div>
+          <div class="BName">
+           <p class="p1">Chicken Maharaja </p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToMac_Chicken()">open</button>
+          </div>
+          
+        </div>
+        <div class="burger"data-type="non-veg">
+        
+          <div class="div_burger" >
+            <img class="product_logo" src="burgers_img/nonveg.svg" alt="">
+            <img class="burger_img" src="burgers_img/Chicken_wrap.png" alt="Chicken Wrap"> </div>
+          <div class="BName">
+           <p class="p1">Chicken Wrap </p>
+           <p class="p2">click below button to see <br>the condiments of burger</p>
+          </div>
+          <div class="div_button">
+            <button onclick="goToChicken_wrap()">open</button>
+          </div>
+          
+        </div>
+      
+
+        
+         
+         
+          
+        
+        
+        
+       
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+.top_button_div{
+  margin-top: 110px;
+}
+.top_button_div .show{
+  padding: 8px 44px 8px 44px;
+  margin-right: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color:#DA291C;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s,
+  color 0.15s,opacity 0.15s;
+  font-size: 16px;
+  font-weight: bold; 
+}
+.top_button_div .show:hover{
+  
+  background-color: #ffc72c;
+  color: #27251f;
+}
+
+.grid_menu{
+display: grid;
+grid-template-columns: 300px 300px 300px;
+margin-top: 25px;
+row-gap: 26px;
+column-gap: 40px;
+
+
+}
+.burger{
+  background-color: #fff8f0;
+  height: 350px;
+  border-radius: 8px;
+ 
+  
+ 
+}
+.product_logo{
+  height: 16px;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+.burger_img{
+  height: 200px;
+  display: block;
+}
+.BName,
+.div_button{
+  text-align: center;
+  display: block;
+}
+.BName .p1{
+  font-size: 22px;
+  font-weight: bold;
+  color: #27251f;
+}
+.BName .p2{
+  font-size: 11px;
+  color: #909090;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  line-height: 14px;
+}
+.div_button button{
+padding: 8px 120px 8px 120px;
+border-radius: 6px;
+border: none;
+background-color: #ffc72c;
+color: #27251f;
+cursor: pointer;
+transition: background-color 0.15s,
+color 0.15s,opacity 0.15s;
+font-size: 16px;
+font-weight: bold;
+}
+.div_button button:hover{
+  background-color:#DA291C;
+  color: white;
+}
+body{
+  background-color: #dfe0df;
+  margin-left: 60px;
+}
+@media only screen and (max-width: 600px){
+ 
+ /* header  */
+  .container{
+    width: 80%;
+  }
+  .header{
+    height: 70px;
+  }
+  .search-bar,
+  .search-button,
+  .voice-search,
+  .hamburger-menu-icon{
+    display: none;
+  }
+  .left-section{
+    padding-left: 4%;
+  }
+  .right-section{
+
+    padding:4%;
+  }
+  .McD-logo-icon{
+    height: 50px;
+  }
+  /* show buttons */
+  .top_button_div .show{
+    padding: 8px 16px;
+    margin-right: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color:#DA291C;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.15s,
+    color 0.15s,opacity 0.15s;
+    font-size: 14px;
+    font-weight: bold;
+    width: 50%;
+    
+     
+  }
+  /*grid  */
+ .grid_menu{
+  display: grid;
+  grid-template-columns: 195px 195px;
+  gap: 15px;
+
+ }
+ .burger{
+  background-color: #fff8f0;
+  height: 310px;
+  border-radius: 8px;
+ 
+  
+ 
+}
+.product_logo{
+  height: 16px;
+  margin-top: 16px;
+  margin-left: 170px;
+}
+
+.burger_img{
+  height: 146px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.BName,
+.div_button{
+  text-align: center;
+  display: block;
+}
+.BName .p1{
+  font-size: 15px;
+  font-weight: bold;
+  color: #27251f;
+  line-height: 16px;
+}
+.BName .p2{
+  margin-top: 14px;
+  font-size: 11px;
+  color: #909090;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  line-height: 14px;
+}
+
+.div_button button{
+padding: 8px 74px;
+margin-top: 16px;
+border-radius: 6px;
+border: none;
+background-color: #ffc72c;
+color: #27251f;
+cursor: pointer;
+transition: background-color 0.15s,
+color 0.15s,opacity 0.15s;
+font-size: 16px;
+font-weight: bold;
+}
+
+    
+}
+      
+
+
+
+
+
+  
+ 
+

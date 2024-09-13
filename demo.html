@@ -1,0 +1,31 @@
+<div id="food-items">
+    <div class="food-item" data-type="veg">Paneer Tikka</div>
+    <div class="food-item" data-type="non-veg">Chicken Curry</div>
+    <div class="food-item" data-type="veg">Vegetable Biryani</div>
+    <div class="food-item" data-type="non-veg">Fish Fry</div>
+    <div class="food-item" data-type="veg">Aloo Gobi</div>
+    <div class="food-item" data-type="non-veg">Mutton Kebab</div>
+    <div class="food-item" data-type="veg">Palak Paneer</div>
+    <div class="food-item" data-type="non-veg">Prawn Masala</div>
+    <div class="food-item" data-type="veg">Chole Bhature</div>
+    <div class="food-item" data-type="non-veg">Egg Curry</div>
+  </div>
+  
+  <button onclick="filterFood('veg')">Show Vegetarian</button>
+  <button onclick="filterFood('non-veg')">Show Non-Vegetarian</button>
+  <button onclick="filterFood('all')">Show All</button>
+ <script>
+    function filterFood(type) {
+  let foodItems = document.getElementsByClassName('food-item');
+  for (let i = 0; i < foodItems.length; i++) {
+    if (type === 'all') {
+      foodItems[i].style.display = 'block';
+    } else if (foodItems[i].getAttribute('data-type') === type) {
+      foodItems[i].style.display = 'block';
+    } else {
+      foodItems[i].style.display = 'none';
+    }
+  }
+}
+
+ </script>  
